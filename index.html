@@ -1,0 +1,87 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Meme Gallery</title>
+            <style>
+                body { font-family: Arial, sans-serif; }
+                .meme { margin: 20px; border: 1px solid #ccc; padding: 10px; }
+                .actions { margin-top: 10px; }
+                button { margin-right: 10px; }
+            </style>
+            <script>
+                function likeMeme(index) {
+                    fetch('/like/' + index, { method: 'POST' });
+                    let likeBtn = document.getElementById('likeBtn' + index);
+                    likeBtn.disabled = true;
+                }
+
+                function dislikeMeme(index) {
+                    fetch('/dislike/' + index, { method: 'POST' });
+                    let dislikeBtn = document.getElementById('dislikeBtn' + index);
+                    dislikeBtn.disabled = true;
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Meme Gallery</h1>
+        
+        <div class="meme">
+            <img src="memes/yERohpazAp.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
+            </body>
+            </html>
+        
+        <div class="meme">
+            <img src="memes/kykTG5bRMn.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
+            </body>
+            </html>
+        
+        <div class="meme">
+            <img src="memes/nsavtCKhmG.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
+            </body>
+            </html>
+        
+        <div class="meme">
+            <img src="memes/ZrMWy90EYB.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
+        <div class="meme">
+            <img src="memes/94w9lHR8BS.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
+        <div class="meme">
+            <img src="memes/KloUhCRp5h.jpg" alt="Meme">
+            <div class="actions">
+                <button onclick="likeMeme()">Like</button>
+                <button onclick="dislikeMeme()">Dislike</button>
+            </div>
+        </div>
+        
